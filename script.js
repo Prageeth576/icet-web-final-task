@@ -41,13 +41,13 @@ function submit(){
     console.log(num, " ", randomNum, "count => ", count);
 
     if(randomNum==num & count<=3){
-        document.getElementById("displayResult").innerHTML = "success! => "+randomNum;
+        document.getElementById("displayResult").innerHTML = "Success! => "+randomNum;
         document.getElementById("gestNumber").disabled = true;
         document.getElementById("btnSubmit").disabled = true;
     } else if(randomNum!=num & count<3){
-        document.getElementById("displayResult").innerHTML = "you have to "+(3-count)+" chance.";
+        document.getElementById("displayResult").innerHTML = "You have to "+(3-count)+" chance.";
     } else if(randomNum!=num & count==3){
-        document.getElementById("displayResult").innerHTML = "you have to no chance.";
+        document.getElementById("displayResult").innerHTML = "Failed! you have to no chance.";
         document.getElementById("gestNumber").disabled = true;
         document.getElementById("btnSubmit").disabled = true;
     }
